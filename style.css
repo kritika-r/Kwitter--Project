@@ -1,0 +1,34 @@
+img{
+    width: 180px;
+    height: 170px;
+    margin-bottom: 25px;
+}
+.body_div{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#heading{
+    color: navy;
+    font-weight: bold;
+    font-style: unset;
+    margin-bottom: 50px;
+}
+#sub-heading{
+    color: white;
+    font-style: oblique;
+    font-weight: bold;
+}
+.container{
+    background-color:#185799;
+    border-radius: 20px;
+    width: 300px;
+}
+#input{
+    width: 250px;
+}
+#joinButton{
+    margin-bottom: 15px;
+
+}
