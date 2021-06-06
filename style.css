@@ -25,10 +25,21 @@ img{
     border-radius: 20px;
     width: 300px;
 }
-#input{
+#username_input{
     width: 250px;
 }
 #joinButton{
     margin-bottom: 15px;
 
+}
+#joinRoomDiv{
+    background-color:#185799;
+    border-radius: 20px;
+    width: 700px;
+}
+label{
+    color: white;
+}
+#room_input{
+ width: 250px;
 }
