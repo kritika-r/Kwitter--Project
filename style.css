@@ -43,3 +43,15 @@ label{
 #room_input{
  width: 250px;
 }
+#existing_rooms{
+    margin-top: 20px;
+    background-color:#185799;
+    width: 650px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+h4{
+    margin-top: 10px;
+    font-weight: bold;
+}
