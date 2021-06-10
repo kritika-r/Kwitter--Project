@@ -14,9 +14,11 @@ document.getElementById("welcome").innerHTML = "Welcome "+username+ "!";
 function addUser(){
    
     var username = document.getElementById("username_input").value;
+    /*
    firebase.database().ref("/").child(username).update({
       text : "adding username"
    });
+   */
    localStorage.setItem("username", username);
   
    
@@ -30,6 +32,7 @@ function addRoom(){
         room : "adding roomname"
      });
      localStorage.setItem("roomname", roomname);
+     window.location="text.html";
 }
 function getData() {
     firebase.database().ref("/").on('value', function(snapshot) 
@@ -38,7 +41,8 @@ function getData() {
     {childKey  = childSnapshot.key;
      Room_names = childKey;
     console.log("The rooms available are: " +Room_names);
-    row = "<div class='room_name' id="+Room_names+"onclick='redirectToRoom(this.id)'>" +Room_names+ "</div><hr>";
+    console.log("function is being called")
+    row = "<div class='room_name' id="+Room_names+"onclick='redirectToRoom(this.id);'>" +Room_names+ "</div><hr>";
     document.getElementById("existing_rooms").innerHTML += row;
     
     });});}
@@ -53,6 +57,6 @@ function removeUser(){
     localStorage.removeItem("username");
     localStorage.removeItem("roomname");
     localStorage.removeItem("room_name");
-    document.getElementById("existing_rooms").innerHTML = "";
+   
     window.location ="login.html";
 }
